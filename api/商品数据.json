@@ -1,0 +1,159 @@
+{
+  "title": "《Days Gone》",
+
+  "id": "a0b69f54a0314a588d917a77bca44cfe",
+
+  "describe": "跨上机车，闯进危机处处的后瘟疫时代美国，杀出一线生机。扮演迪肯圣约翰，作为浪迹者与赏金猎人，在开放世界动作冒险游戏中踏破崎路、竭力求生，同时寻觅生存意义。",
+
+  "introduce": [
+    {
+      "Subtitle": "残酷的开放世界动作冒险游戏。",
+      "Subtitle2": "《Days Gone》是一款以全球瘟疫大灭绝事件两年后的严酷荒野为舞台的开放世界动作冒险游戏。",
+      "content": "玩家将扮演赏金猎人迪肯圣约翰（Deacon St. John），在被死亡包围的残酷险境中挣扎求生，寻找活下去的理由。搜寻废弃聚落，找出有用资源，打造珍贵物品和武器，也可以冒险一搏，与其他不择手段度日的残存者公平交易——或以暴力方式决一胜负。"
+    },
+    {
+      "Subtitle": "游戏特色",
+      "content1": "令人屏息的场景：稠密山林、覆雪田野、葱郁草场和熔岩地质——太平洋西北地区美不胜收又充满致命危险。千百万年的火山活动，刻划出山岭洞穴、矿场和小镇，让玩家自由探索。",
+      "content2": "你死我活的战斗：狠毒的人类和异变者成群遍地横行，玩家必须充分发挥各式各样可改造的陷阱、武器以及可强化技能来求生。浪迹者机车是无边绝境中的无价道具，记得善加利用。",
+      "content3": "不断变化的环境：跳上迪肯忠实可靠的机车，探索随天气、日夜交替和异变者演化而改变的世界。异变者会随环境和当中的人类而持续适应。",
+      "content4": "扣人心弦的故事：进入迪肯的内心世界，在丧亲的深切悲痛中寻找希望，细细品味由绝望、背叛和懊悔交织的动人故事。透过每天拼命求存，体验最真实的人性。"
+    },
+
+    {
+      "Subtitle": "内容包括：",
+      "content1": "新游戏+",
+      "content2": "生存模式（Survival Mode）",
+      "content3": "挑战模式（Challenge Mode）",
+      "content4": "机车外观"
+    },
+    {
+      "Subtitle": "PC版功能包括超宽屏幕支持、帧率解锁及提升画质（增强细致度、视野效果、植物渲染距离等）"
+    }
+  ],
+
+  "customAttributes": {
+    "Developers": "Bend Studio",
+    "publisher": "Sony Interactive Entertainment",
+    "Issuedate": "2021年5月19日",
+    "platform": "windows"
+  },
+
+  "images": [
+    {
+      "type": "logo",
+      "url": "https://cdn2-unrealengine-1251447533.file.myqcloud.com/egs-brutalopenworldactionadventuregame-bendstudio-ic1-400x400-ab7690803430.png?h=270&resize=1&w=480"
+    },
+    {
+      "type": "OfferImageTall",
+      "url": "https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S2-1200x1600-e1c183cc11fdb47e26581e5ba19aa10a.jpg"
+    },
+    {
+      "type": "OfferImageWide",
+      "url": "https://cdn1-epicgames-1251447533.file.myqcloud.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S1-2560x1440-fec2937a1bd5f04f2a6321e4e2a2a2ba.jpg"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://cdn2-unrealengine-1251447533.file.myqcloud.com/egs-brutalopenworldactionadventuregame-bendstudio-g1a-06-1920x1080-70afacb6d866.jpg?h=720&resize=1&w=1280"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://cdn2-unrealengine-1251447533.file.myqcloud.com/egs-brutalopenworldactionadventuregame-bendstudio-g1a-07-1920x1080-a69debc19178.jpg?h=720&resize=1&w=1280"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://cdn2.unrealengine.com/egs-brutalopenworldactionadventuregame-bendstudio-g1a-00-1920x1080-52b68dacf3f0.jpg?h=720&resize=1&w=1280"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://cdn2.unrealengine.com/egs-brutalopenworldactionadventuregame-bendstudio-g1a-05-1920x1080-751f5e83974e.jpg?h=720&resize=1&w=1280"
+    }
+  ],
+
+  "tagss": {
+    "tags": [
+      {
+        "id": "1216",
+        "name": "动作",
+        "groupName": "genre"
+      },
+      {
+        "id": "16979",
+        "name": "夏季特卖",
+        "groupName": null
+      },
+      {
+        "id": "18051",
+        "name": "万圣节特惠",
+        "groupName": "event"
+      },
+      {
+        "id": "17845",
+        "name": "Sony 发行商促销",
+        "groupName": null
+      },
+      {
+        "id": "1080",
+        "name": "生存",
+        "groupName": "genre"
+      },
+      {
+        "id": "1370",
+        "name": "单人游戏",
+        "groupName": "feature"
+      },
+      {
+        "id": "1307",
+        "name": "开放世界",
+        "groupName": "genre"
+      },
+      {
+        "id": "9547",
+        "name": "Windows",
+        "groupName": "platform"
+      }
+    ]
+  },
+
+  "ageGatings": {
+    "ageControl": 18,
+    "descriptor": null,
+    "elements": null,
+    "gameRating": "R",
+    "ratingImage": "https://cdn1.epicgames.com/salesEvent/salesEvent/csrr_18_256x256-0f21b1b47e38f450cba80c36fe88d677",
+    "ratingSystem": "CSRR",
+    "title": "限制級"
+  },
+  "price": {
+    "totalPrice": {
+      "discountPrice": 18693,
+      "originalPrice": 27900,
+      "voucherDiscount": 0,
+      "discount": 9207,
+      "currencyCode": "CNY",
+      "currencyInfo": {
+        "decimals": 2
+      },
+      "fmtPrice": {
+        "originalPrice": "¥279.00",
+        "discountPrice": "¥186.93",
+        "intermediatePrice": "¥186.93"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "contentType": "video/mp4",
+      "height": 1080,
+      "width": 1920,
+      "url": "https://media-cdn.epicgames.com/1e21241c46414dbda3059f4b8509cd0e/1e21241c46414dbda3059f4b8509cd0e-high.fmp4",
+      "sound": "https://media-epicgames-1251447533.file.myqcloud.com/1e21241c46414dbda3059f4b8509cd0e/1e21241c46414dbda3059f4b8509cd0e-audio.m4a"
+    },
+    {
+      "contentType": "video/mp4",
+      "height": 720,
+      "width": 1280,
+      "url": "https://media-epicgames-1251447533.file.myqcloud.com/0592adf5a20f458f8a8a182dff45d0d5/0592adf5a20f458f8a8a182dff45d0d5-high.fmp4",
+      "sound": "https://media-epicgames-1251447533.file.myqcloud.com/0592adf5a20f458f8a8a182dff45d0d5/0592adf5a20f458f8a8a182dff45d0d5-audio.m4a"
+    }
+  ]
+}
