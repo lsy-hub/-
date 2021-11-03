@@ -1,19 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p>hellohello</p>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
-
   export default {
     name: 'App',
-    components: {
-      HelloWorld
-    }
+
   }
 </script>
 
@@ -25,5 +19,41 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  .slide-right-enter {
+    transform: translate(100%, 0);
+  }
+
+  .slide-right-enter-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide-right-enter-to {
+    transform: translate(0, 0);
+  }
+
+
+  /* // 从左边进入 */
+  .slide-left-enter {
+    transform: translate(-100%, 0);
+  }
+
+  .slide-left-enter-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide-left-enter-to {
+    transform: translate(0, 0);
   }
 </style>
