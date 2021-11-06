@@ -34,7 +34,7 @@
             <div style="margin-top: 45px">
               <ul @click="showPopno">
                 <li @click="goto('/Home')">商城</li>
-                <li @click="goto('/NewDetail')">新闻</li>
+                <li @click="goto('/Newslist')">新闻</li>
                 <li>常见问题</li>
                 <li>帮助</li>
                 <li>虚化引擎</li>
@@ -160,7 +160,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
