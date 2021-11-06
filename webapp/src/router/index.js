@@ -6,21 +6,18 @@ import Newslist from '../views/Newslist.vue'
 import NewsDetail from '../views/NewsDetail.vue'
 import login from '../views/login.vue'
 
-import Vant from 'vant';
-import 'vant/lib/index.css';
 
-Vue.use(Vant);
 Vue.use(VueRouter);
 
 const router = new VueRouter({
     routes: [{
-            path: '/home',
+            path: '/Home',
             component: Home,
             name: 'Home',
         },
         {
             path: '/',
-            redirect: '/home'
+            redirect: '/Home'
         },
         {
             path: '/Newslist',
@@ -63,6 +60,8 @@ router.beforeEach(function(to,from,next){
         if(!userInfo){
             next(
             )
+        }else{
+            next('/Home')
         }
     }else{
         next()

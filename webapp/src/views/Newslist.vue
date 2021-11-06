@@ -2,6 +2,7 @@
   <div class="box">
     <h3>新闻</h3>
     <div class="lunbo">
+      <!-- 轮播图 -->
       <van-swipe :loop="false" :width="340" :show-indicators="false">
         <van-swipe-item>
           <van-image
@@ -33,6 +34,7 @@
         </van-swipe-item>
       </van-swipe>
     </div>
+    <!-- 列表 -->
     <div class="list">
       <div
         class="Rotationdiv listdiv"
@@ -69,6 +71,7 @@ export default {
     };
   },
   methods: {
+    // 点击跳转至对应id商品页
     gotodetail(id) {
       this.$router.push({
         name: "NewsDetail",

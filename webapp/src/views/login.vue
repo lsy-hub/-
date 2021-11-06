@@ -1,6 +1,6 @@
 <template is="name">
   <div class="bbox">
-    <a @click="$router.back()">返回</a>
+    <!-- <a @click="$router.back()">返回</a> -->
     <h2 class="dengluh2">登陆</h2>
 
     <van-form @submit="onSubmit">

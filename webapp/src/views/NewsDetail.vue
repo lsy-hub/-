@@ -49,6 +49,7 @@ export default {
     };
   },
   created() {
+    // 渲染route对应id数据
     const { id } = this.$route.query;
     console.log("login", id);
     this.mi = this.mu.filter(function (item) {
