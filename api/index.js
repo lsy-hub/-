@@ -6,7 +6,7 @@ const newslistModel = require('./models/news')
 const userlistModel = require('./models/user')
 const cors = require("koa2-cors")
 const bodyParser = require("koa-bodyparser")
-router.get('/home', async ctx => {
+router.get('/goods/list', async ctx => {
     var gameList = await gamelistModel.find();
     ctx.body = {
         code: 200,
@@ -14,7 +14,7 @@ router.get('/home', async ctx => {
         msg: "GET / gamelist success"
     }
 })
-router.get('/news', async ctx => {
+router.get('/news/list', async ctx => {
     var newsList = await newslistModel.find();
     ctx.body = {
         code: 200,
@@ -29,7 +29,6 @@ router.post('/login', async ctx => {
         username: username,
         password: password
     })
-    console.log(res);
     if (res == '') {
         ctx.body = {
             code: 400,
@@ -41,7 +40,6 @@ router.post('/login', async ctx => {
             msg: "POST / 登录成功"
         }
     }
-
 })
 
 app.use(cors())
