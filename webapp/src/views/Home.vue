@@ -134,7 +134,7 @@
               >
                 <li>
                   <div class="goods-box">
-                    <a href="" 
+                    <span href="" 
                       style="display: block; width: 191px"
                       @click="gotoDetail(item.id)"
                       >
@@ -145,7 +145,7 @@
                           <div class="goods-pirce">{{ "￥" + item.pirce }}</div>
                         </div>
                       </div>
-                    </a>
+                    </span>
                     <div class="goods-icon">
                       <van-icon name="add-o" color="#fff" size="20" />
                     </div>
@@ -168,7 +168,7 @@
               >
                 <li>
                   <div class="goods-box">
-                    <a href="" style="display: block; width: 191px" @click="gotoDetail(item.id)">
+                    <span href="" style="display: block; width: 191px" @click="gotoDetail(item.id)">
                       <div style="display: flex">
                         <img :src="item.img" width="48" height="64" />
                         <div>
@@ -176,7 +176,7 @@
                           <div class="goods-pirce">{{ "￥" + item.pirce }}</div>
                         </div>
                       </div>
-                    </a>
+                    </span>
                     <div class="goods-icon">
                       <van-icon name="add-o" color="#fff" size="20" />
                     </div>
@@ -199,7 +199,7 @@
               >
                 <li>
                   <div class="goods-box">
-                    <a href="" style="display: block; width: 191px" @click="gotoDetail(item.id)">
+                    <span href="" style="display: block; width: 191px" @click="gotoDetail(item.id)">
                       <div style="display: flex">
                         <img :src="item.img" width="48" height="64" />
                         <div>
@@ -207,7 +207,7 @@
                           <div class="goods-pirce">{{ "￥" + item.pirce }}</div>
                         </div>
                       </div>
-                    </a>
+                    </span>
                     <div class="goods-icon">
                       <van-icon name="add-o" color="#fff" size="20" />
                     </div>
