@@ -1,8 +1,9 @@
 <template>
     <div>
-        <el-button type="danger" style="margin-bottom:10px;margin-left:10px;float: right;">批量删除</el-button>
+        <el-button @click="delArray()" type="danger" style="margin-bottom:10px;margin-left:10px;float: right;">批量删除
+        </el-button>
         <el-button type="success" style="margin-bottom:10px;float: right;" @click="addNews">添加新闻</el-button>
-        <el-table :data="newslist" border style="width: 100%;">
+        <el-table :data="newslist" border style="width: 100%;" @selection-change="handleSelectionChange">
             <el-table-column type="selection" width="55">
             </el-table-column>
             <el-table-column fixed prop="title" label="新闻标题" width="220">
@@ -16,8 +17,8 @@
             <el-table-column prop="content" label="具体内容" width="300" :show-overflow-tooltip="true">
             </el-table-column>
             <el-table-column fixed="right" label="操作" width="100">
-                <template>
-                    <el-button type="text" size="small">删除</el-button>
+                <template slot-scope="scope">
+                    <el-button type="text" size="small" @click="delItem(scope.row._id)">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
@@ -31,12 +32,48 @@
             return {
                 checkable: false,
                 checkIndex: '',
-                newslist: []
+                newslist: [],
+                tableDataAmount: []
             }
         },
         methods: {
             addNews() {
                 this.$router.push('/manage/news/add')
+            },
+            async delItem(id) {
+                let newslist = this.newslist.filter(item => {
+                    return item._id != id
+                })
+                const {
+                    data
+                } = await this.$requestNew.post('/news/delete', {
+                    id: id
+                })
+                this.newslist = newslist
+            },
+            handleSelectionChange(data) {
+                this.tableDataAmount = data
+            },
+            delArray() {
+                var that = this
+                var val = this.tableDataAmount
+                if (val) {
+                    val.forEach((item, index) => {
+                        that.newslist.forEach((itemI, indexI, arr) => {
+                            if (item._id === itemI._id) {
+                                const {
+                                    data
+                                } = this.$requestNew.post('/news/delete', {
+                                    id: item._id
+                                })
+                            }
+                        })
+                        that.newslist = that.newslist.filter(itemx => {
+                            return itemx._id != item._id
+                        })
+                    });
+                }
+                this.$refs.multipleTable.clearSelection()
             }
         },
         created() {

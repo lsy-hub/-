@@ -74,6 +74,34 @@
                 }
             };
         },
+        methods: {
+            submitForm(formName) {
+                this.$refs[formName].validate(async (valid) => {
+                    if (valid) {
+                        const {
+                            data
+                        } = await this.$requestNew.post('/news/add', {
+                            title: this.ruleForm.name,
+                            Issuedate: this.ruleForm.date1,
+                            author: this.ruleForm.author,
+                            short: this.ruleForm.resource,
+                            content: this.ruleForm.desc,
+
+                        })
+
+                        if (data.code === 200) {
+                            alert('添加新闻成功')
+                        }
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
+            resetForm(formName) {
+                this.$refs[formName].resetFields();
+            }
+        }
 
     }
 </script>
