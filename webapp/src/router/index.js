@@ -39,6 +39,11 @@ const router = new VueRouter({
             component: goods,
             name: 'goods'
         },
+        {
+            path: '/goods',
+            component: goods,
+            name: 'goods'
+        },
     ],
     scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
