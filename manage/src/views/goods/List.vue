@@ -1,8 +1,10 @@
 <template>
     <div>
-        <el-button type="danger" style="margin-bottom:10px;margin-left:10px;float: right;">批量删除</el-button>
+        <el-button @click="delArray()" type="danger" style="margin-bottom:10px;margin-left:10px;float: right;">批量删除
+        </el-button>
         <el-button type="success" style="margin-bottom:10px;float: right;" @click="addGame">添加游戏</el-button>
-        <el-table :data="gamelist" border style="width: 100%;">
+        <el-table :data="gamelist" ref="multipleTable" border style="width: 100%;"
+            @selection-change="handleSelectionChange">
             <el-table-column type="selection" width="55">
             </el-table-column>
             <el-table-column fixed prop="title" label="游戏名称" width="220">
@@ -20,6 +22,7 @@
             <el-table-column fixed="right" label="操作" width="100">
                 <template slot-scope="scope">
                     <el-button type="text" size="small" @click="checkItem(scope.$index)">查看</el-button>
+                    <el-button type="text" size="small" @click="delItem(scope.row._id)">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
@@ -57,7 +60,7 @@
                 checkable: false,
                 checkIndex: '',
                 gamelist: [],
-                selectIds: []
+                tableDataAmount: []
             }
         },
         created() {
@@ -69,6 +72,42 @@
             })
         },
         methods: {
+            async delItem(id) {
+                let gamelist = this.gamelist.filter(item => {
+                    return item._id != id
+                })
+                const {
+                    data
+                } = await this.$requestNew.post('/goods/delete', {
+                    id: id
+                })
+                this.gamelist = gamelist
+                console.log(id);
+            },
+            handleSelectionChange(data) {
+                this.tableDataAmount = data
+            },
+            delArray() {
+                var that = this
+                var val = this.tableDataAmount
+                if (val) {
+                    val.forEach((item, index) => {
+                        that.gamelist.forEach((itemI, indexI, arr) => {
+                            if (item._id === itemI._id) {
+                                const {
+                                    data
+                                } = this.$requestNew.post('/goods/delete', {
+                                    id: item._id
+                                })
+                            }
+                        })
+                        that.gamelist = that.gamelist.filter(itemx => {
+                            return itemx._id != item._id
+                        })
+                    });
+                }
+                this.$refs.multipleTable.clearSelection()
+            },
             checkItem(index) {
                 this.checkable = true
                 this.checkIndex = index
