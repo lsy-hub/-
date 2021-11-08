@@ -86,6 +86,6 @@ export default {
     .list li {
          text-align: center;
          font-size: .75em;
-         color: #e7e7e7;
+         color: #e7e7e7;    
     }
 </style>
