@@ -1,0 +1,197 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.my-swipe .van-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    
+    
+  }
+
+  .cove-msg{
+    position: absolute;
+    width: 330px;
+    height: 180px;
+    padding: 20px 25px;
+    color: #fff;
+    bottom: 0px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom,rgba(255,0,0,0), rgba(0,0,0,1))
+    
+  }
+  
+    .mine-div{
+        background-color: #121212;
+        
+    }
+  
+  .text-span{
+    margin-bottom: 15px;display: inline-block;font-size: 9px;
+    
+  }
+
+  .van-swipe__track{
+    transform: translate3d(-246.875px, 0px, 0px);
+  }
+
+  .text-over{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pirce{
+    color: rgba(245, 245, 245, 0.6);
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+  }
+
+  .over1{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: rgb(245, 245, 245);
+  }
+
+  .over2{
+    display: block;color:rgba(245, 245, 245, 0.6);
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .cost-buttom{
+     width:53px;line-height: 1.4;font-size: 14px;
+  }
+
+  .title{
+    font-size: 18px;margin-left:16px; margin-bottom: 18px;color:rgb(245, 245, 245)
+    
+  }
+
+  .free-title{
+    display:flex;justify-content: space-between;padding-top:30px;margin:0px 16px;margin-bottom:10px
+  }
+  
+  .goods-name{
+    color: rgb(245, 245, 245);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-left: 15px;
+  }
+  .goods-pirce{
+    color: rgb(245, 245, 245);
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .goods-icon{
+    width:44px;
+    height:64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .goods-box{
+    width:267px;height: 96px;padding:16px; display:flex;box-sizing: border-box;
+  }
+
+  .goods-out{
+    width:300px;
+  }
+
+
+   .indicator{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .ban{
+    width:100%;height:80px;background:#121212;border-bottom:1px solid #262626;padding:20px 20px;
+    box-sizing: border-box;
+  }
+  .mid{
+    text-align: center;
+    height: 39px;
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .span-title{
+        font-size: 9px;
+    letter-spacing: 0.09px;
+    line-height: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(245, 245, 245, 0.6);
+  }
+
+  .explore-title{
+    color: rgb(245, 245, 245);
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .explore-item{
+    padding: 20px;
+  }
+
+  .pop-bottom{
+    position:absolute; bottom:0px; 
+    height: 107px;
+    width: 100%;
+  }
+
+  .pop-msg{
+    height:56px; display:flex; background:#0078f2;
+    width: 100%;
+  }
+
+  .pop-msg-span{
+    width: 100%;
+    font-size: .625em;
+    position: relative;
+    line-height: 56px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: none;
+    text-align: center;
+  }
+
+  .pop-login{
+    height: 51px;
+  }
+  
+  .login-btn{
+    border:1px solid #464646;padding-top:10px;
+    
+  }
+  .login-btn-f{
+    justify-content: center;
+    flex:2; display:flex;
+    
+  }
+
+  
