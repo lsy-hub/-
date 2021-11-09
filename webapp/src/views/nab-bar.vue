@@ -106,7 +106,7 @@
               <a class="explore-title" href="">浏览</a>
             </p>
           </van-popup>
-          <van-col span="6">span: 8</van-col>
+          <van-col span="6"><van-icon name="search" size="20" color="#fff" style="margin-left:55px;margi-top:10px"/></van-col>
         </van-row>
       </div>
     </van-sticky>
@@ -161,6 +161,15 @@ export default {
 </script>
 
 <style scoped>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background-color: rgb(18, 18, 18);
+  z-index: -1;
+}
+
 .slide-right-enter {
   transform: translate(100%, 0);
 }

@@ -11,9 +11,9 @@
           style="width: 310px; margin-left: 1.5em"
         >
           <van-image
-            width="310px"
+            width="330px"
             height="100%"
-            :src="item.img"
+            src="https://img01.yzcdn.cn/vant/cat.jpeg"
             radius="0.5em"
           />
           <div class="Rotationdiv">
@@ -69,11 +69,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .box {
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  padding-left: 1.5em;
 }
 
 h3 {
@@ -82,7 +83,6 @@ h3 {
   margin: 0;
   line-height: 1.5em;
   font-weight: normal;
-  margin-left: 1em;
 }
 .van-swipe-item:nth-child(2) {
   margin-left: 0.5em;
@@ -104,7 +104,6 @@ h3 {
   box-sizing: border-box;
   margin-right: 1.5em;
   padding-bottom: 2em;
-  margin-left: 1.5em;
 }
 .listdiv {
   padding-top: 1.5em;

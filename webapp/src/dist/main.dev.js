@@ -6,17 +6,17 @@ var _vue = _interopRequireDefault(require("vue"));
 
 var _App = _interopRequireDefault(require("./App.vue"));
 
-var _router = _interopRequireDefault(require("./router"));
+var _vueRouter = _interopRequireDefault(require("vue-router"));
 
 var _request = _interopRequireDefault(require("./utils/request"));
 
-var _vant = _interopRequireWildcard(require("vant"));
+var _router = _interopRequireDefault(require("./router"));
 
 var _vuex = _interopRequireDefault(require("vuex"));
 
-require("vant/lib/index.css");
+var _vant = _interopRequireWildcard(require("vant"));
 
-var _vueRouter = _interopRequireDefault(require("vue-router"));
+require("vant/lib/index.css");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -29,8 +29,7 @@ _vue["default"].use(_vant["default"]);
 _vue["default"].prototype.$request = _request["default"];
 _vue["default"].config.productionTip = false; //图片自动滚动
 
-_vue["default"].use(_vant.Lazyload); // Vue.use(router)
-
+_vue["default"].use(_vant.Lazyload);
 
 _vue["default"].use(_vueRouter["default"]);
 
@@ -41,8 +40,7 @@ new _vue["default"]({
   render: function render(h) {
     return h(_App["default"]);
   }
-}).$mount('#app'); // liaousyang 11.5更新代码 上面也有更新代码 但是全部都是添加
-
+}).$mount('#app');
 var routerPush = _vueRouter["default"].prototype.push;
 
 _vueRouter["default"].prototype.push = function push(location) {
