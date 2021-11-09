@@ -23,7 +23,7 @@ router.beforeEach((to, from, next) => {
       const {
         username,
       } = store.state.user.userInfo
-      request.get('/user/verfiy', {
+      request.get('/api/user/verfiy', {
         params: {
           username
         }

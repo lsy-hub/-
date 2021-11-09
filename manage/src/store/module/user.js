@@ -35,7 +35,7 @@ export default {
         async login(context, payload) {
             const {
                 data
-            } = await request.post('/login', payload)
+            } = await request.post('/api/login', payload)
             if (data.code === 200) {
                 context.commit('login', data.data)
                 context.commit('addAuthRouter', null, {
