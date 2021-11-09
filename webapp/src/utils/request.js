@@ -1,12 +1,13 @@
 import axios from 'axios';
 
-const host = 'http://localhost:8081'
+// const host = '/sje'
 
 const instance = axios.create({
     // baseURL: 基础路径
-    baseURL: host
+    // baseURL: host
 })
 
-instance.host = host
+
+// instance.host = host
 
 export default instance
