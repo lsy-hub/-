@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     async onSubmit(values) {
-      const { data } = await this.$denglu.post("/login", values);
+      const { data } = await this.$denglu.post("/api/login", values);
       console.log(data);
       if (data.code === 401) {
         this.$notify({ type: "danger", message: "用户名或密码错误" });
