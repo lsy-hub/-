@@ -4,21 +4,43 @@
     <div class="lunbo">
       <!-- 轮播图 -->
       <van-swipe :loop="false" :width="340" :show-indicators="false">
+<<<<<<< HEAD
         <van-swipe-item
           v-for="item in gamelist.slice(0, 2)"
           :key="item.ids"
           v-on:click="gotodetail(item.ids)"
           style="width: 310px; margin-left: 1.5em"
         >
+=======
+        <van-swipe-item>
+>>>>>>> 0ebb160dc5e14af39431a32918ded89cac39b9c1
           <van-image
-            width="310px"
+            width="330px"
             height="100%"
-            :src="item.img"
+            src="https://img01.yzcdn.cn/vant/cat.jpeg"
             radius="0.5em"
           />
           <div class="Rotationdiv">
             <p class="Rotationtext">
+<<<<<<< HEAD
               {{ item.title }}
+=======
+              《战神》将于 1 月 14 日登陆Epic游戏商城，现在就预购吧
+            </p>
+            <span class="Rotationspan">阅读更多</span>
+          </div>
+        </van-swipe-item>
+        <van-swipe-item>
+          <van-image
+            width="330px"
+            height="100%"
+            src="https://img01.yzcdn.cn/vant/cat.jpeg"
+            radius="0.5em"
+          />
+          <div class="Rotationdiv">
+            <p class="Rotationtext">
+              《战神》将于 1 月 14 日登陆Epic游戏商城，现在就预购吧
+>>>>>>> 0ebb160dc5e14af39431a32918ded89cac39b9c1
             </p>
             <span class="Rotationspan">阅读更多</span>
           </div>
@@ -33,8 +55,17 @@
         :key="item.ids"
         v-on:click="gotodetail(item.ids)"
       >
+<<<<<<< HEAD
         <van-image width="100%" :src="item.img" radius="0.5em" />
         <p class="Rotationtext" v-html="item.title"></p>
+=======
+        <van-image
+          width="100%"
+          src="https://img01.yzcdn.cn/vant/cat.jpeg"
+          radius="0.5em"
+        />
+        <p class="Rotationtext" v-html="item.todo"></p>
+>>>>>>> 0ebb160dc5e14af39431a32918ded89cac39b9c1
         <span class="listspan">阅读更多</span>
       </div>
     </div>
@@ -46,7 +77,20 @@
 export default {
   data: function () {
     return {
+<<<<<<< HEAD
       gamelist: [],
+=======
+      munu: [
+        {
+          id: 1,
+          todo: "《战神》将于 1 月 14 日登陆Epic游戏商城，现在就预吧",
+        },
+        {
+          id: 2,
+          todo: "《战神》将于 1 月 14 日登陆Epic游戏商城，现在就预吧",
+        },
+      ],
+>>>>>>> 0ebb160dc5e14af39431a32918ded89cac39b9c1
     };
   },
   created() {
@@ -69,11 +113,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .box {
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  padding-left: 1.5em;
 }
 
 h3 {
@@ -82,7 +127,6 @@ h3 {
   margin: 0;
   line-height: 1.5em;
   font-weight: normal;
-  margin-left: 1em;
 }
 .van-swipe-item:nth-child(2) {
   margin-left: 0.5em;
@@ -104,7 +148,6 @@ h3 {
   box-sizing: border-box;
   margin-right: 1.5em;
   padding-bottom: 2em;
-  margin-left: 1.5em;
 }
 .listdiv {
   padding-top: 1.5em;

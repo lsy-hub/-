@@ -5,9 +5,7 @@ import Home from '../views/Home.vue'
 import Newslist from '../views/Newslist.vue'
 import NewsDetail from '../views/NewsDetail.vue'
 import login from '../views/login.vue'
-import goods from '../views/goods.vue'
-
-
+import goods from  '../views/goods.vue'
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -34,12 +32,8 @@ const router = new VueRouter({
             path: '/login',
             component: login,
             name: 'login'
-        },{
-            path: '/goods',
-            component: goods,
-            name: 'goods'
         },
-        {
+         {
             path: '/goods',
             component: goods,
             name: 'goods'
